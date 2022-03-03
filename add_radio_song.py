@@ -29,7 +29,6 @@ def add_song(playlist_name):
 		song_name = app.windows()[0].window_text()
 		
 		if last_song != song_name or last_song == None:
-			print("nouveau son")
 			last_song = song_name
 
 			app = Application(backend="uia").start("Spotify.exe")
